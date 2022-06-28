@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/resposive.css">
+    <link rel="stylesheet" href="Plugin/Fontawesome/css/all.css">
+    <script src="JS/JQUERY/Jquery.js"></script>
+    <script src="Bootstrap/js/popper.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="JS/index.js"></script>
+    <title>Trang Chủ</title>
+</head>
+
+<body>
+    <div id="bg-opacity"></div>
+    <div id="wrapper">
+        <div id="wp-header" class="position-relative">
+            <div id="top-head" class="hide-tablet-mobile">
+                <div class="super-container d-flex justify-content-between" id="nav-top">
+                    <a href="" class="tags">
+                        <i class="fas fa-tags"></i>
+                        Hình Thức Thanh Toán
+                    </a>
+                    <ul class="d-flex">
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="index.html">Sản Phẩm</a></li>
+                        <li><a href="introduce.html">Giới Thiệu</a></li>
+                      <li><a href="sitemap.html">SiteMap</a></li>
+                        <li><a href="">Đăng Kí</a></li>
+                        <li><a href="">Đăng Nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav>
+                <div class="super-container wp-nav justify-content-between d-flex position-relative" style="align-items: center;">
+                    <div id="nav-bar" class="position-absolute d-none">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="index.html" class="logo">HSHOP</a>
+
+                    <form action="" class="search position-relative  hide-tablet-mobile ">
+                        <input type="text" placeholder="Bạn muốn mua gì !">
+                        <button class="btn-search btn btn-dark text-light"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div id="wp-cart" class="d-flex">
+                        <div class="advise d-flex hide-mobile" style="margin-right: 5px;">
+                            <div id="border-phone" class="" style="margin-right: 5px;">
+                                <a href="" title="Tư Vấn"> <i class="fas fa-phone text-light"
+                                        style="font-size: 14px;"></i></a>
+                            </div>
+                            <div class="wp-inner">
+                                <p style="font-weight: lighter;">Tư Vấn 24/7</p>
+                                <p style="font-weight: bold;">1800 66 01</p>
+                            </div>
+                        </div>
+                        <div id="cart" class="position-relative">
+                            <div id="border-cart">
+                                <a href="cart.html" title="giỏ hàng">
+                                    <i class="fas fa-shopping-cart text-light" style="font-size: 14px;"></i>
+                                </a>
+                            </div>
+                            <span style="position: absolute!important;
+                            top: -15px;
+                            right: -1px;
+                            color: white;
+                            font-size: 0.9rem;"  id="qty" class="position-absolute"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+             <div class="super-container">  
+                   <div class="" id="search-responsive" style="display: none; margin-top: 5px;">
+                    <form action="" class="search position-relative">
+                        <input type="text" placeholder="Bạn muốn mua gì !">
+                        <button class="btn-search btn btn-dark text-light"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+				</div>
+            </nav>
+
+
+
+            <!--  respon-menu -->
+            <div id="respon-menu" class="position-fixed">
+                <div id="header" style="  background: #cd1818;" class="d-flex justify-content-between">
+                    <a href="" class="logo" style="color: white; font-size: 14px;">HSHOP</a>
+                    <div id="close-bar" style="color: white;">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div id="content" class="h-100 bg-light" style="padding: 10px;">
+                    <ul class="list-cat" style="">
+                        <li>
+                            <div class="items-menu d-flex justify-content-between position-relative">
+                                <i class="fas fa-mobile-alt active"></i>
+                                <a href="index.html" class="text-dark">Điện Thoại </a>
+                                <i class="fas fa-chevron-down act"></i>
+                            </div>
+
+                            <div class="sub-menu">
+                                <table class="list-brand table table-bordered text-center">
+                                    <tr>
+                                        <td><a href="samsung.html" class="text-dark">SamSung</a></td>
+                                        <td><a href="Vivo.html" class="text-dark">ViVo</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="Oppo.html" class="text-dark">Oppo</a></td>
+                                        <td><a href="" class="text-dark">Readme</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="Iphone.html" class="text-dark">Iphone</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu d-flex justify-content-between position-relative">
+                                <i class="fas fa-tablet-alt active"></i>
+                                <a href="" class="text-dark">Máy Tính Bảng </a>
+                                <i class="fas fa-chevron-down act"></i>
+                            </div>
+                            <div class="sub-menu">
+                                <table class="list-brand table table-bordered text-center">
+                                    <tr>
+                                        <td><a href="" class="text-dark">SamSung</a></td>
+                                        <td><a href="" class="text-dark">Iphone</a></td>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu d-flex justify-content-between position-relative">
+                                <i class="fas fa-laptop active"></i>
+                                <a href="" class="text-dark">Laptop</a></td>
+                                <i class="fas fa-chevron-down act"></i>
+                            </div>
+
+                            <div class="sub-menu">
+                                <table class="list-brand table table-bordered text-center">
+                                    <tr>
+                                        <td><a href="" class="text-dark">Dell</a></td>
+                                        <td><a href="" class="text-dark">Hp</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="text-dark">MSI</a></td>
+                                        <td><a href="" class="text-dark">Assus</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu d-flex justify-content-between  position-relative">
+                                <i class="fas fa-headphones-alt active"></i>
+                                <a href="" class="text-dark">phụ Kiện </a>
+                                <i class="fas fa-chevron-down act"></i>
+                            </div>
+
+                            <div class="sub-menu">
+                                <table class="list-brand table table-bordered text-center">
+                                    <tr>
+                                        <td><a href="" class="text-dark">Loa Nghe Nhạc</a></td>
+                                        <td><a href="" class="text-dark">Tai Nghe</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="text-dark">Sạc Dự Phòng</a></td>
+                                        <td><a href="" class="text-dark">Máy Tính</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="far fa-clock active"></i>
+                                <a href="" class="text-dark ">Đồng Hồ</a>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-print active"></i>
+                                <a href="" class="text-dark">Máy In</a>
+                            </div>
+                        </li>
+
+                        <div style="height:13px; background-color: rgb(199 199 199 / 34%);">
+                        </div>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-home active"></i>
+                                <a href="" class="text-dark ">Trang chủ</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fab fa-product-hunt active"></i>
+                                <a href="" class="text-dark ">Sản Phẩm</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-clock active"></i>
+                                <a href="" class="text-dark ">Giới Thiệu</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="far fa-phone active"></i>
+                                <a href="" class="text-dark ">Liên Hệ</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-edit active"></i>
+                                <a href="" class="text-dark ">Đăng Kí </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-sign-in-alt active"></i>
+                                <a href="" class="text-dark ">Đăng Nhập</a>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+                </div>
+                <!--  -->
+
+
+            </div>
+
+
+        </div>
+
+              
+    <div id="wp-content" class="clearfix">
+      
+
+        
+ <div id="content" class="super-container">
+        <div class="section" id="checkout-wp">
+            <div class="section-head">
+                <h3 class="section-title text-center">Thanh toán</h3>
+            </div>
+            <div class="section-detail bg-white p-4">
+                <div class="wrap clearfix">
+                    <form method="POST" action="?mod=cart&action=confirm&controller=index">
+                        <div id="custom-info-wp" class="fl-left">
+                            <h3 class="title">Thông tin khách hàng</h3>
+                            <div class="detail">
+                                <div class="field-wp">
+                                    <label>Họ tên</label>
+                                    <input type="text" name="fullname" id="fullname">
+                                </div>
+                                <div class="field-wp">
+                                    <label>Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="field-wp">
+                                    <label>Địa chỉ nhận hàng</label>
+                                    <input type="text" name="address" id="address">
+                                </div>
+                                <div class="field-wp">
+                                    <label>Số điện thoại</label>
+                                    <input type="tel" name="tel" id="tel">
+                                </div>
+                                <div class="field-full-wp">
+                                    <label>Ghi chú</label>
+                                    <textarea name="note"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="order-review-wp" class="fl-right">
+                            <h3 class="title">Thông tin đơn hàng</h3>
+                            <div class="detail">
+                                <table class="shop-table">
+                                    <thead>
+                                        <tr>
+                                            <td>Sản phẩm(1)</td>
+                                            <td>Tổng</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                              
+                                       
+                                   
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="order-total">
+                                            <td>Tổng đơn hàng:</td>
+                                            <td><strong class="total-price">  </strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <div id="payment-checkout-wp">
+                                    <ul id="payment_methods">
+                                        <li>
+                                            <input type="radio" checked="checked" id="direct-payment" name="payment-method" value="direct-payment">
+                                            <label for="direct-payment">Thanh toán tại cửa hàng</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="payment-home" name="payment-method" value="payment-home">
+                                            <label for="payment-home">Thanh toán tại nhà</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="place-order-wp clearfix">
+                                    <button type="submit" name="checkout">Đặt hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>  
+ 
+
+        <div id="footer" class="bg-white">
+            <div class="super-container d-flex wp-inner flex-wrap">
+                <div class="box">
+                    <div class="box-head">
+                        <h3>Hshop</h3>
+                    </div>
+                    <div class="box-body mt-3">
+                        <p>Hshop luôn cung cấp luôn là sản phẩm chính hãng có thông tin rõ ràng, chính sách
+                            ưu đãi
+                            cực lớn cho khách hàng có thẻ thành viên.</p>
+                        <a href="" style="cursor: none;">
+                            <img src="Image/payment.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-head">
+                        <h3>Liên Hệ</h3>
+                    </div>
+                    <div class="box-body mt-3">
+                        <ul class="list-link">
+                            <li><a href="">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    số 4-Nguyễn Văn Bảo-Gò Vấp-Tp.HCM
+                                </a></li>
+                            <li><a href="">
+                                    <i class="fas fa-phone"></i>
+                                    0971.754.389
+                                </a></li>
+                            <li><a href="">
+                                    <i class="fas fa-envelope"></i>
+                                    hieushop@gmail.com
+                                </a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <h3>Chính sách mua hàng</h3>
+                    </div>
+                    <div class="box-body mt-3">
+                        <ul class="list-link" style="list-style-type: circle;">
+                            <li><a href=""> Quy định-chính sách</a></li>
+                            <li><a href="">chính sách bảo hành-đổi trả</a></li>
+                            <li><a href="">Chính sách hội viên</a></li>
+                            <li><a href="">Giao hàng-lắp đặt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <h3>Bảng tin</h3>
+                    </div>
+                    <div class="box-body mt-3">
+                        <p>Đăng kí với chúng tôi để nhận ưu đãi sớm nhất</p>
+                        <form action="#">
+                            <input class="w-100 form-control mt-3 mb-3" type="text" placeholder="nhập email tại đây">
+                            <button class="btn btn-danger mb-3 text-light w-100"> đăng kí</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end-footer -->
+        <div id="copy-right" class="bg-danger">
+            <div class="container">
+                <p class="text-light text-center" style="font-size: 14px; padding: 3px;">© Bản quyền thuộc về HHDshop |
+                    Cung cấp bởi Vietsoz</p>
+            </div>
+        </div>
+        <!-- end-copyright -->
+        <div class="hotline-phone-ring-wrap">
+            <div class="hotline-phone-ring">
+                <div class="hotline-phone-ring-circle"></div>
+                <div class="hotline-phone-ring-circle-fill"></div>
+                <div class="hotline-phone-ring-img-circle">
+                <a href="tel:0987654321" class="pps-btn-img">
+                    <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+                </a>
+                </div>
+            </div>
+            <div class="hotline-bar">
+                <a href="tel:0987654321">
+                    <span class="text-hotline">0987.654.321</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<Script>
+  
+
+  $(function()
+  {
+    var list_product_buy=JSON.parse(localStorage.getItem('product_cart'))
+    if(list_product_buy.length==0)
+    {
+        alert("Không có sản phẩm thanh toán vui lòng quay lại trang chủ !!!");
+    }else
+    list_product_buy.forEach(element => {
+        var s=            "<tr class='cart-item'>"+
+                       "<td class='product-name'>"+element.name+
+                        "<strong class='product-quantity'>"+"X"+" "+1 + "</strong></td>"
+                                            "<td class='product-total'>"+element.price+ "</td> </tr>"
+             $('tbody').append(s)        
+    });
+
+  });
+
+</Script>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/resposive.css">
+    <link rel="stylesheet" href="Plugin/Fontawesome/css/all.css">
+    <script src="JS/JQUERY/Jquery.js"></script>
+    <script src="Bootstrap/js/popper.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/data.js"></script>
+    <title>Trang Chủ</title>
+</head>
+
+<body>
+    <div id="bg-opacity"></div>
+    <div id="wrapper">
+        <div id="wp-header" class="position-relative">
+            <div id="top-head" class="hide-tablet-mobile">
+                <div class="super-container d-flex justify-content-between" id="nav-top">
+                    <a href="" class="tags">
+                        <i class="fas fa-tags"></i>
+                        Hình Thức Thanh Toán
+                    </a>
+                    <ul class="d-flex">
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="index.html">Sản Phẩm</a></li>
+                        <li><a href="introduce.html">Giới Thiệu</a></li>
+                      <li><a href="sitemap.html">SiteMap</a></li>
+                        <li><a href="">Đăng Kí</a></li>
+                        <li><a href="">Đăng Nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav>
+                <div class="super-container wp-nav justify-content-between d-flex position-relative" style="align-items: center;">
+                    <div id="nav-bar" class="position-absolute d-none">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="index.html" class="logo">HSHOP</a>
+
+                    <form action="" class="search position-relative  hide-tablet-mobile ">
+                        <input type="text" placeholder="Bạn muốn mua gì !">
+                        <button class="btn-search btn btn-dark text-light"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div id="wp-cart" class="d-flex">
+                        <div class="advise d-flex hide-mobile" style="margin-right: 5px;">
+                            <div id="border-phone" class="" style="margin-right: 5px;">
+                                <a href="" title="Tư Vấn"> <i class="fas fa-phone text-light"
+                                        style="font-size: 14px;"></i></a>
+                            </div>
+                            <div class="wp-inner">
+                                <p style="font-weight: lighter;">Tư Vấn 24/7</p>
+                                <p style="font-weight: bold;">1800 66 01</p>
+                            </div>
+                        </div>
+                        <div id="cart" class="position-relative">
+                            <div id="border-cart">
+                                <a href="cart.html" title="giỏ hàng">
+                                    <i class="fas fa-shopping-cart text-light" style="font-size: 14px;"></i>
+                                </a>
+                            </div>
+                            <span style="position: absolute!important;
+                            top: -15px;
+                            right: -1px;
+                            color: white;
+                            font-size: 0.9rem;"  id="qty" class="position-absolute"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+             <div class="super-container">  
+                   <div class="" id="search-responsive" style="display: none; margin-top: 5px;">
+                    <form action="" class="search position-relative">
+                        <input type="text" placeholder="Bạn muốn mua gì !">
+                        <button class="btn-search btn btn-dark text-light"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+				</div>
+            </nav>
+
+
+
+            <!--  respon-menu -->
+            <div id="respon-menu" class="position-fixed">
+                <div id="header" style="  background: #cd1818;" class="d-flex justify-content-between">
+                    <a href="" class="logo" style="color: white; font-size: 14px;">HSHOP</a>
+                    <div id="close-bar" style="color: white;">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div id="content" class="h-100 bg-light" style="padding: 10px;">
+                    <ul class="list-cat" style="">
+                        <li>
+                            <div class="items-menu d-flex justify-content-between position-relative">
+                                <i class="fas fa-mobile-alt active"></i>
+                                <a href="index.html" class="text-dark">Điện Thoại </a>
+                                <i class="fas fa-chevron-down act"></i>
+                            </div>
+
+                            <div class="sub-menu">
+                                <table class="list-brand table table-bordered text-center">
+                                    <tr>
+                                        <td><a href="samsung.html" class="text-dark">SamSung</a></td>
+                                        <td><a href="Vivo.html" class="text-dark">ViVo</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="Oppo.html" class="text-dark">Oppo</a></td>
+                                        <td><a href="" class="text-dark">Readme</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="Iphone.html" class="text-dark">Iphone</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu d-flex justify-content-between position-relative">
+                                <i class="fas fa-tablet-alt active"></i>
+                                <a href="" class="text-dark">Máy Tính Bảng </a>
+                                <i class="fas fa-chevron-down act"></i>
+                            </div>
+                            <div class="sub-menu">
+                                <table class="list-brand table table-bordered text-center">
+                                    <tr>
+                                        <td><a href="" class="text-dark">SamSung</a></td>
+                                        <td><a href="" class="text-dark">Iphone</a></td>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu d-flex justify-content-between position-relative">
+                                <i class="fas fa-laptop active"></i>
+                                <a href="" class="text-dark">Laptop</a></td>
+                                <i class="fas fa-chevron-down act"></i>
+                            </div>
+
+                            <div class="sub-menu">
+                                <table class="list-brand table table-bordered text-center">
+                                    <tr>
+                                        <td><a href="" class="text-dark">Dell</a></td>
+                                        <td><a href="" class="text-dark">Hp</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="text-dark">MSI</a></td>
+                                        <td><a href="" class="text-dark">Assus</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu d-flex justify-content-between  position-relative">
+                                <i class="fas fa-headphones-alt active"></i>
+                                <a href="" class="text-dark">phụ Kiện </a>
+                                <i class="fas fa-chevron-down act"></i>
+                            </div>
+
+                            <div class="sub-menu">
+                                <table class="list-brand table table-bordered text-center">
+                                    <tr>
+                                        <td><a href="" class="text-dark">Loa Nghe Nhạc</a></td>
+                                        <td><a href="" class="text-dark">Tai Nghe</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="text-dark">Sạc Dự Phòng</a></td>
+                                        <td><a href="" class="text-dark">Máy Tính</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="far fa-clock active"></i>
+                                <a href="" class="text-dark ">Đồng Hồ</a>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-print active"></i>
+                                <a href="" class="text-dark">Máy In</a>
+                            </div>
+                        </li>
+
+                        <div style="height:13px; background-color: rgb(199 199 199 / 34%);">
+                        </div>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-home active"></i>
+                                <a href="" class="text-dark ">Trang chủ</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fab fa-product-hunt active"></i>
+                                <a href="" class="text-dark ">Sản Phẩm</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-clock active"></i>
+                                <a href="" class="text-dark ">Giới Thiệu</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="far fa-phone active"></i>
+                                <a href="" class="text-dark ">Liên Hệ</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-edit active"></i>
+                                <a href="" class="text-dark ">Đăng Kí </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="items-menu position-relative">
+                                <i class="fas fa-sign-in-alt active"></i>
+                                <a href="" class="text-dark ">Đăng Nhập</a>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+                </div>
+                <!--  -->
+
+
+            </div>
+
+
+        </div>
+
+        <!-- </div> -->
+
+        <!-- end header -->
+        <div id="wp-content">
+            <div class="super-container">
+                <div id="bread-crumb">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0 pt-3 pb-3">
+                            <i class="fas fa-home active pt-1 me-2"></i>
+                            <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+                            <li class="breadcrumb-item active"><a href="#">Chi Tiết Sản Phẩm</a></li>
+                      
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="super-container wp-inner d-flex">
+                <div id="side-bar" class="hide-tablet-mobile">
+                    <div class="box cat">
+                        <div class="box-head">
+                            <h3>danh mục sản phẩm</h3>
+                        </div>
+                        <div class="box-body">
+                            <ul class="list-cat">
+                                <li id_cat="0"  class="position-relative"><a  href="list_product.html">Điện Thoại </a>
+                                    <i class="fas fa-mobile-alt icon_pro "></i>
+                                    <i class="fas fa-chevron-right active"></i>
+                                    <div class="sub-menu">
+                                        <ul class="list-brand">
+                                            <li id_cat="0" code_brand="SS" ><a href="list_product.html">SamSung</a></li>
+                                            <li id_cat="0" code_brand="VV" ><a href="list_product.html">Vivo</a></li>
+                                            <li id_cat="0" code_brand="OP"><a href="list_product.html">Oppo</a></li>
+                                            <li id_cat="0" code_brand="RM"><a href="list_product.html">Readme</a></li>
+                                            <li id_cat="0" code_brand="IP"><a href="list_product.html">Iphone</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id_cat="1" class="position-relative"><a  href="list_product.html">Máy Tính Bảng </a>
+                                    <i class="fas fa-tablet-alt icon_pro"></i>
+                                    <i class="fas fa-chevron-right active"></i>
+                                    <div class="sub-menu">
+                                        <ul class="list-brand">
+                                            <li id_cat="1" code_brand="SS" >
+                                                <a href="list_product.html">SamSung</a>
+                                            </li>
+                                            <li id_cat="1" code_brand="IP"><a  href="list_product.html">Iphone</a></li>
+                                        </ul>
+                                </li>
+                                <li id_cat="2" class="position-relative"><a  href="list_product.html">Máy Tính</a>
+                                    <i class="fas fa-laptop icon_pro"></i>
+                                    <i class="fas fa-chevron-right active"></i>
+                                    <div class="sub-menu">
+                                        <ul class="list-brand">
+                                            <li id_cat="2" code_brand="AS"><a href="list_product.html">Asus</a></li>
+                                            <li id_cat="2" code_brand="DE"><a href="list_product.html">Dell</a></li>
+                                            <li id_cat="2" code_brand="HP"><a href="list_product.html">Hp</a></li>
+                                            <li id_cat="2" code_brand="MS"><a href="list_product.html">MSI</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id_cat="3" class="position-relative"><a   href="list_product.html">Phụ Kiện</a>
+                                    <i class="fas fa-headphones-alt icon_pro"></i>
+                                    <i class="fas fa-chevron-right active"></i>
+                                    <div class="sub-menu">
+                                        <ul class="list-brand">
+                                            <li id_cat="3" code_brand="LO"><a href="list_product.html">Loa Nghe Nhạc</a></li>
+                                            <li id_cat="3" code_brand="TE"><a href="list_product.html">Tai Nghe</a></li>
+                                            <li id_cat="3" code_brand="SA"><a href="list_product.html">Sạc Dự Phòng</a></li>
+                                            <li id_cat="3" code_brand="CH"><a href="list_product.html">Chuột máy tính</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id_cat="4" class="position-relative">
+                                    <i class="far fa-clock icon_pro"></i>
+                                   <ul class="list-brand">
+                                       <li id_cat="4" code_brand="DO"> <a  href="list_product.html">Đồng Hồ</a></li>
+                                   </ul>
+                                </li>
+                                <li id_cat="5" class="position-relative">
+                                    <i class="fas fa-print icon_pro"></i>
+                                 <ul class="list-brand">
+                                    <a   id_cat="5" code_brand="MI" href="list_product.html">Máy In</a>
+                                 </ul>
+                                </li>
+                            </ul>
+        
+                        </div>
+                        
+                    </div>
+                    <!-- end categories -->
+                    <div class="box well-sell">
+                        <div class="box-head ">
+                            <h3>Bán Chạy</h3>
+                        </div>
+                        <div class="box-body">
+                            <ul class="list-product">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-cool-new-mobile-phone-promotion-purple-banner-image_183067.jpg"
+                            alt="" class="img-fluid">
+                    </div>
+                </div>
+                <style>
+                    .active-thumb
+                    {
+                        border: 1px solid orange !important;
+                    }
+                </style>
+                <!-- end-sidebar -->
+                <div id="content">
+                    <div class="inner-detail">
+                        <div class="detail d-flex flex-wrap">
+                            <div class="slider-thumb">
+                                <div class="main-thumb text-center">
+                                    <div  class="thumb">
+                                        <img class="img-fluid change" src="Image/Phone/Samsung/10.jpg" alt="">
+                                    </div>
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="Image/Phone/Samsung/11.jpg" alt="">
+                                    </div>
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="Image/Phone/Samsung/12.jpg" alt="">
+                                    </div>
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="Image/Phone/Samsung/13.jpg" alt="">
+                                    </div>
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="Image/Phone/Samsung/14.jpg" alt="">
+                                    </div>
+
+                                    <button class="click_left">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <button class="click_right">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                                <div class="sub-thumb d-flex mt-3 justify-content-between">
+                                    <div class="thumb ">
+                                        <img class="img-fluid change" src="Image/Phone/Samsung/10.jpg" alt="">
+                                    </div>
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="Image/Phone/Samsung/11.jpg" alt="">
+                                    </div>
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="Image/Phone/Samsung/12.jpg" alt="">
+                                    </div>
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="Image/Phone/Samsung/13.jpg" alt="">
+                                    </div>
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="Image/Phone/Samsung/14.jpg" alt="">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="content-detail">
+                                <h3 class="">Laptop HP Probook 440 G2 LED Backlit</h3>
+                                <div class="infor-detail">
+                                    <p>Bộ vi xử lý :Intel Core i505200U 2.2 GHz (3MB L3 Cache upto 2.7 GHz)</p>
+                                    <p> Bộ nhớ RAM :4 GB (DDR3 Bus 1600 MHz)</p>
+                                    <p>Đồ họa :Intel HD Graphics</p>
+                                    <p> Ổ đĩa cứng :500 GB (HDD)</p>
+                                    <p>Màn hình :14 inch (HD LED, 1366 x 768 pixels)</p>
+                                    <p>Ổ đĩa cứng :500 GB (HDD)</p>
+                                    <p class="mt-2">Tình Trạng : <span class="fw-bold">Còn hàng</span></p>
+                                    <div class="change price fw-bold text-danger mt-3" style="font-size: 24px;">14.000.000đ
+                                    </div>
+                                </div>
+                                <div class="cart d-flex mt-5">
+                                    <div class="wp-button me-3  hide-tablet-mobile ">
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
+                                            <input class="plus is-form" type="button" value="+">
+                                          </div>
+                                      </div>
+                                    <button class="btn btn-danger"
+                                        ><a class="text-white" href="cart.html">Thêm Giỏ Hàng</a></button>
+                                  
+
+                                     
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="wp-desc">
+                        <div class="head-desc">
+                            <h3 class="fw-bold">Mô Tả Sản Phẩm</h3>
+                        </div>
+                        <div class="infor-desc">
+                            <p> Máy tính xách tay HP Probook 440 G2 là dòng máy tính xách tay thích hợp cho doanh nghiệp
+                                và những người làm văn phòng. Do đó, ngoài cấu hình tốt, thiết kế bền bỉ, máy tính xách
+                                tay HP Probook 440 G2 còn có khả năng bảo mật toàn diện giúp bạn luôn yên tâm về dữ liệu
+                                của mình.</p>
+
+                            <p class="mt-4 mb-4">Mặc dù vẫn giữ bộ khung truyền thống như các dòng laptop HP khác, nhưng
+                                máy tính xách tay HP Probook 440 G2 đã được chải chuốt nhiều hơn các sản phẩm trước đây
+                                cả về thiết kế tổng thể lẫn cân nặng cũng như độ mỏng để máy tính xách tay HP Probook
+                                440 G2 mang dáng vẻ thời trang hơn. Máy tính xách tay HP Probook 440 G2 được gia công
+                                chắc chắn, các bản lề và khớp nối hoàn thiện tỉ mỉ, bền vững. Lớp vỏ bằng nhựa cứng kết
+                                hợp phần viền bằng nhôm sáng bóng cũng tạo điểm nhấn cho máy tính xách tay HP Probook
+                                440 G2 và giúp giảm thiểu hư hỏng do va đập, đồng thời cũng giảm trọng lượng của tính
+                                xách tay HP Probook 440 G2, giúp bạn di chuyển dễ dàng hơn.</p>
+
+                            <p>Mọi hình ảnh trên máy tính xách tay HP Probook 440 G2 sẽ hiện lên sắc nét ngay trước mắt
+                                bạn nhờ màn hình 14inch độ phân giải chuẩn HD 1366x768 pixels. Công nghệ chống chói Anti
+                                glare LED Backlit giúp tăng độ tương phản và cho màu sắc tươi sáng, trung thực hơn giúp
+                                bạn xem phim và đọc tài liệu rõ nét ngay cả khi bạn làm việc trong văn phòng hay đang
+                                ngồi ở nơi có nhiều ánh sáng mặt trời. Không chỉ có màn hình sắc nét, máy tính xách tay
+                                HP Probook 440 G2 còn được trang bị hệ thống loa 2.0 công nghệ High Definition Audio
+                                sống động đem lại cho bạn những giây phút giải trí đúng nghĩa với các bộ phim HD sắc nét
+                                cùng âm thanh trung thực nhất.</p>
+                        </div>
+
+
+                    </div>
+                    <div class="box mt-5">
+                        <div class="box-head">
+                            <h3>Sản Phẩm Liên Quan</h3>
+                        </div>
+                        <div class="box-body">
+                            <ul class="list-product d-flex flex-wrap">
+                            
+                                <li class="col-p-4 col-t-3 col-m-2">
+                             <div class="item-product">
+                                <a href="" class="thumb"><img src="Image/Phone/Samsung/2.png"
+                                    class="img-fluid" alt="" title=" samsung galaxy a12 4GB-128GB"> </a>
+                            <div class="infor-pro">
+                                <a href="Modules/Product/detail.html" class="name"> samsung galaxy A12
+                                </a>
+                                <p class="price">3.790.000đ <del class="old-price">4.620.000đ</del> </p>
+                            </div>
+                            <div class="buy d-flex justify-content-between flex-wrap">
+                                <div class="add-cart">
+                                    <a href="">Thêm giỏ hàng</a>
+                                </div>
+                                <div class="buy-now">
+                                    <a href="">Mua ngay</a>
+                                </div>
+                            </div>
+                             </div>
+                                </li>
+                                
+                                <li class="col-p-4 col-t-3 col-m-2">
+                                    <div class="item-product">
+                                       <a href="" class="thumb"><img src="Image/Phone/Samsung/3.png"
+                                           class="img-fluid" alt="" title=" samsung galaxy a12 4GB-128GB"> </a>
+                                   <div class="infor-pro">
+                                       <a href="Modules/Product/detail.html" class="name"> samsung galaxy A12
+                                       </a>
+                                       <p class="price">3.790.000đ <del class="old-price">4.620.000đ</del> </p>
+                                   </div>
+                                   <div class="buy d-flex justify-content-between flex-wrap">
+                                       <div class="add-cart">
+                                           <a href="">Thêm giỏ hàng</a>
+                                       </div>
+                                       <div class="buy-now">
+                                           <a href="">Mua ngay</a>
+                                       </div>
+                                   </div>
+                                    </div>
+                                       </li>
+                                       
+                                <li class="col-p-4 col-t-3 col-m-2">
+                                    <div class="item-product">
+                                       <a href="" class="thumb"><img src="Image/Phone/Samsung/3.png"
+                                           class="img-fluid" alt="" title=" samsung galaxy a12 4GB-128GB"> </a>
+                                   <div class="infor-pro">
+                                       <a href="Modules/Product/detail.html" class="name"> samsung galaxy A12
+                                       </a>
+                                       <p class="price">3.790.000đ <del class="old-price">4.620.000đ</del> </p>
+                                   </div>
+                                   <div class="buy d-flex justify-content-between flex-wrap">
+                                       <div class="add-cart">
+                                           <a href="">Thêm giỏ hàng</a>
+                                       </div>
+                                       <div class="buy-now">
+                                           <a href="">Mua ngay</a>
+                                       </div>
+                                   </div>
+                                    </div>
+                                       </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- end-content -->
+        <div id="footer" class="bg-white">
+            <div class="super-container d-flex wp-inner flex-wrap">
+                <div class="box">
+                    <div class="box-head">
+                        <h3>Hshop</h3>
+                    </div>
+                    <div class="box-body mt-3">
+                        <p>Hshop luôn cung cấp luôn là sản phẩm chính hãng có thông tin rõ ràng, chính sách
+                            ưu đãi
+                            cực lớn cho khách hàng có thẻ thành viên.</p>
+                        <a href="" style="cursor: none;">
+                            <img src="Image/payment.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-head">
+                        <h3>Liên Hệ</h3>
+                    </div>
+                    <div class="box-body mt-3">
+                        <ul class="list-link">
+                            <li><a href="">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    số 4-Nguyễn Văn Bảo-Gò Vấp-Tp.HCM
+                                </a></li>
+                            <li><a href="">
+                                    <i class="fas fa-phone"></i>
+                                    0971.754.389
+                                </a></li>
+                            <li><a href="">
+                                    <i class="fas fa-envelope"></i>
+                                    hieushop@gmail.com
+                                </a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <h3>Chính sách mua hàng</h3>
+                    </div>
+                    <div class="box-body mt-3">
+                        <ul class="list-link" style="list-style-type: circle;">
+                            <li><a href=""> Quy định-chính sách</a></li>
+                            <li><a href="">chính sách bảo hành-đổi trả</a></li>
+                            <li><a href="">Chính sách hội viên</a></li>
+                            <li><a href="">Giao hàng-lắp đặt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <h3>Bảng tin</h3>
+                    </div>
+                    <div class="box-body mt-3">
+                        <p>Đăng kí với chúng tôi để nhận ưu đãi sớm nhất</p>
+                        <form action="#">
+                            <input class="w-100 form-control mt-3 mb-3" type="text" placeholder="nhập email tại đây">
+                            <button class="btn btn-danger mb-3 text-light w-100"> đăng kí</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end-footer -->
+        <div id="copy-right" class="bg-danger">
+            <div class="container">
+                <p class="text-light text-center" style="font-size: 14px; padding: 3px;">© Bản quyền thuộc về HHDshop |
+                    Cung cấp bởi Vietsoz</p>
+            </div>
+        </div>
+        <!-- end-copyright -->
+
+    </div>
+    </div>
+    <script>
+        
+        var well_sell=$('.well-sell .box-body .list-product');
+        for (var j = 0; j <8; j++) {
+        var i= Math.floor(Math.random() * 5) + 0;
+                  well_sell.append(
+                        "<li class='d-flex'>" + "<a id_pro='" + DSSP[i][j].id + "'" + "href='detail_product.html' class='thumb'>" + "<img src='" + DSSP[i][j].thumb + "'" + "class='img-fluid'> </a>" + "<div class='infor-pro'>"
+                        + "<a id_pro='" + DSSP[i][j].id + "'" + " href='' class='name'>" + DSSP[i][j].name + "</a>" +
+                        "<p class='price'>" + DSSP[i][j].price + "<del class='old-price ms-2'>" + DSSP[i][j].old_price + "</del> </p>" +
+                        " <a class='buy-now' id_pro='" + DSSP[i][j].id + "'" + " href='detail_product.html'>Mua Ngay</a></div> </li>"
+                    );
+                }
+    </script>
+ 
+    <script>
+  var id_pro=localStorage.getItem('id_pro');
+  for (let index = 0; index < DSSP.length; index++) {
+       for (let j = 0; j <DSSP[index].length; j++) {
+            
+        if(DSSP[index][j].id==id_pro)
+        {
+                  $('.slider-thumb .thumb .change').attr('src',DSSP[index][j].thumb)
+                  $('.content-detail h3').text(DSSP[index][j].name)
+                  $('.content-detail .infor-detail .change').text(DSSP[index][j].price)
+         
+                  break;
+        }
+         
+       }
+      
+      
+  }
+  $(function()
+  {
+     
+
+
+
+  })
+
+    </script>
+   
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+ul
+{
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+  p
+  {
+      margin-bottom: 0px;
+  }
+  
+  h1,h2,h3,h4,h5,h6
+  {
+      margin: 0px;
+  }
+
+.justify-content-space-around
+{
+    justify-content: space-around;
+}
+.justify-content-center
+{
+    justify-content: center;
+}
+.justify-content-between
+{
+    justify-content: space-between;
+}
+
+.position-absolute
+{
+    position:absolute;
+}
+
+.position-relative
+{
+    position: relative;
+}
+
+.clear-both
+{
+    clear:both;
+}
+
+
+

@@ -1,0 +1,8 @@
+/*STYLE*/
+@import '../CSS/import/header.css';
+@import '../CSS/import/index.css';
+@import '../CSS/import/categories.css';
+@import '../CSS/import/detail.css';
+@import '../CSS/import/cart.css';
+@import '../CSS/import/checkout.css';
+@import '../CSS/import/footer.css';

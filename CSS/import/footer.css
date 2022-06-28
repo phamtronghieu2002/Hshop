@@ -1,0 +1,40 @@
+#footer
+{
+padding-top: 45px;
+}
+#footer .wp-inner .box
+{
+         flex-basis: 25%;
+         padding-right: 20px;
+}
+#footer .wp-inner .box:first-child .box-head h3
+{
+  font-size: 30px;
+  color: #da1818;
+  font-weight: 500;
+  text-align: left;
+}
+#footer .wp-inner .box:not(:first-child)  .box-head h3
+{
+    font-size: 21px;
+    color: #333333;
+    font-weight: 400;
+
+}
+#footer .wp-inner .box .box-body .list-link a
+{
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
+}
+#footer .wp-inner .box .box-body p
+{
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
+}
+#footer .wp-inner .box .box-body form input
+{
+  
+
+}
