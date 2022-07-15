@@ -64,7 +64,7 @@ fix(li);
 
 selector.find('.active').toggleClass('fa-chevron-up');
 selector.find('.active').toggleClass('fa-chevron-down');
-selector.find('.sub-menu').slideToggle();
+selector.find('.sub-menu').slideToggle()
  }
  li.hover(function()
  {
@@ -137,7 +137,7 @@ else
 // $(".owl-carousel").owlCarousel();
 $('.owl-carousel').owlCarousel({
   loop:true,
-  margin:10,
+  margin:5,
   autoplay:true,
   autoplayTimeout:2000,
   responsiveClass:true,

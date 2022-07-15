@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="Image/Favicon/Logo2.png">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
@@ -15,7 +16,7 @@
     <script src="Bootstrap/js/bootstrap.min.js"></script>
     <script src="JS/index.js"></script>
     <script src="JS/data.js"></script>
-    <title>Trang Chủ</title>
+    <title>Danh Mục Sản Phẩm</title>
 </head>
 <body>
     <div id="bg-opacity"></div>
@@ -465,10 +466,10 @@
 
 
                     <div class="box">
-                        <div class="box-head  position-relative">
+                        <div class="box-head  d-flex align-items-center justify-content-between">
                             <h3 id="name_cat">điện thoại</h3>
-                            <p style="font-size: 14px; color: #555555;" class="position-absolute end-0 top-0"> 16 sản
-                                phẩm</p>
+                            <span style="font-size: 14px; color: #555555;"> 16 sản
+                                phẩm</span>
                         </div>
 
 
@@ -616,9 +617,12 @@
     </div>
 
     <script>
-        var id_cat = JSON.parse(localStorage.getItem('id_cat'))
-        var code_brand=JSON.parse(localStorage.getItem('code_brand'))
+        var id_cat=localStorage.getItem('id_cat')
+        var code_brand=localStorage.getItem('code_brand')
         var check_click=JSON.parse(localStorage.getItem('check_click'))
+
+
+
         console.log(typeof(check_click))
         var active_bread_crumb=document.getElementById('active_bread')
         var name_cat=document.getElementById('name_cat');
@@ -628,7 +632,7 @@
               name_cat.innerText="Điện Thoại"
         }
         else if(id_cat==1)
-        {ju
+        {
               active_bread_crumb.innerText="Máy Tính Bảng"
               name_cat.innerText="Máy Tính Bảng"
         }
@@ -652,7 +656,7 @@
               name_cat.innerText="Máy In"
         }
 
-
+      console.log(check_click==true);
   if(check_click==true)
   {
         for (var i = 0; i < 6; i++) {

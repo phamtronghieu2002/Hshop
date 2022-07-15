@@ -10,7 +10,7 @@ $(function()
      {
         id_cat= $(this).attr("id_cat");
   
-        localStorage.setItem('id_cat',JSON.stringify(id_cat));
+        localStorage.setItem('id_cat',id_cat);
         console.log(id_cat)
         localStorage.setItem('check_click',true);
        
@@ -24,8 +24,8 @@ $(function()
         code_brand=$(this).attr('code_brand');
             
         
-        localStorage.setItem('id_cat_brand',JSON.stringify(id_cat));
-        localStorage.setItem('code_brand',JSON.stringify(code_brand));
+        localStorage.setItem('id_cat_brand',id_cat);
+        localStorage.setItem('code_brand',code_brand);
           localStorage.setItem('check_click',false);
 
           console.log(id_cat)
