@@ -1,57 +1,27 @@
+$(function () {
+    //  localStorage.clear()
+    $('.list-cat li a').click(function () {
+        id_cat = $(this).attr('id_cat');
 
-$(function()
-{
-       
+        localStorage.setItem('id_cat', id_cat);
+        localStorage.setItem('check_click', true);
+    });
 
+    $('.cat .list-cat .sub-menu  .list-brand  li a').click(function () {
+        id_cat = $(this).attr('id_cat');
+        code_brand = $(this).attr('code_brand');
 
+        localStorage.setItem('id_cat_brand', id_cat);
+        localStorage.setItem('code_brand', code_brand);
+        localStorage.setItem('check_click', false);
+    });
 
-   //  localStorage.clear()
-     $('.list-cat li a').click(function()
-     {
-        id_cat= $(this).attr("id_cat");
-  
-        localStorage.setItem('id_cat',id_cat);
-        console.log(id_cat)
-        localStorage.setItem('check_click',true);
-       
+    $('.list-product  a').click(function () {
+        var id_pro = $(this).attr('id_pro');
+        localStorage.setItem('id_pro', id_pro);
+    });
 
-     })
-   
-
-     $('.cat .list-cat .sub-menu  .list-brand  li a').click(function()
-     {
-        id_cat= $(this).attr("id_cat");
-        code_brand=$(this).attr('code_brand');
-            
-        
-        localStorage.setItem('id_cat_brand',id_cat);
-        localStorage.setItem('code_brand',code_brand);
-          localStorage.setItem('check_click',false);
-
-          console.log(id_cat)
-          
-          console.log(code_brand)
-
-
-     })
-   
-
-     $('.list-product  a').click(function()
-{
-     var id_pro=$(this).attr('id_pro')
-    localStorage.setItem('id_pro',id_pro);
-
-
-
-})
-
-$('#cart a').click(function()
-{
-    localStorage.setItem('check_click_cart',true);
-})
-      
-
-
-
-
-})
+    $('#cart a').click(function () {
+        localStorage.setItem('check_click_cart', true);
+    });
+});

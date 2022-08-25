@@ -615,46 +615,38 @@
         </div>
     </div>
     </div>
-
+    <script src="JS/Functions_handle.js"></script> 
     <script>
         var id_cat=localStorage.getItem('id_cat')
         var code_brand=localStorage.getItem('code_brand')
         var check_click=JSON.parse(localStorage.getItem('check_click'))
-
-
-
-        console.log(typeof(check_click))
         var active_bread_crumb=document.getElementById('active_bread')
         var name_cat=document.getElementById('name_cat');
-        if(id_cat==0)
-        {
-              active_bread_crumb.innerText="Điện Thoại"
-              name_cat.innerText="Điện Thoại"
+
+        const handle_Name_Breadcrumb=(name)=>{
+            active_bread_crumb.innerText=name
+              name_cat.innerText=name
+
         }
-        else if(id_cat==1)
-        {
-              active_bread_crumb.innerText="Máy Tính Bảng"
-              name_cat.innerText="Máy Tính Bảng"
+    
+        switch (id_cat) {
+            case "0":
+            handle_Name_Breadcrumb("Điện Thoại");   break;
+            case "1":
+            handle_Name_Breadcrumb("Máy tính bảng");   break;
+            case "2":
+            handle_Name_Breadcrumb("Máy tính");  break;
+            case "3":
+            handle_Name_Breadcrumb("Phụ kiện");  break;
+            case "4":
+            handle_Name_Breadcrumb("Đồng hồ"); break;
+            case "5":
+            handle_Name_Breadcrumb("Máy in"); break;
+            default:
+                break;
         }
-           else if(id_cat==2)
-        {
-              active_bread_crumb.innerText="Máy Tính"
-              name_cat.innerText="Máy Tính"
-        }
-        else if(id_cat==3)
-        {
-              active_bread_crumb.innerText="Phụ Kiện"
-              name_cat.innerText="Phụ Kiện"
-        }
-        else if(id_cat==4)
-        {
-              active_bread_crumb.innerText="Đồng Hồ"
-              name_cat.innerText="Đồng Hồ"
-        }   else if(id_cat==5)
-        {
-              active_bread_crumb.innerText="Máy In"
-              name_cat.innerText="Máy In"
-        }
+
+      
 
       console.log(check_click==true);
   if(check_click==true)
@@ -664,12 +656,7 @@
 
                 for (var j = 0; j <16; j++) {
                     $('.box .box-body .list-product').append(
-                        "<li class='col-p-4 col-t-3 col-m-2'>" +"<div class='item-product'>"+ "<a id_pro='" + DSSP[i][j].id + "'" + " href='detail_product.html' class='thumb'>" + "<img src='" + DSSP[i][j].thumb + "'" + "class='img-fluid'> </a>" + "<div class='infor-pro'>"
-                        + "<a href='' class='name'>" + DSSP[i][j].name + "</a>" +
-                        "<p class='price'>" + DSSP[i][j].price + "<del class='old-price ms-2'>" + DSSP[i][j].old_price + "</del> </p> </div>" +
-                        "<div class='buy d-flex justify-content-between flex-wrap'>" +
-                        "<div class='add-cart'> <a  id_pro='" + DSSP[i][j].id + "'" + " href='cart.html'>Thêm giỏ hàng</a></div>"
-                        + "<div class='buy-now'> <a id_pro='" + DSSP[i][j].id + "'" + " href='detail_product.html'>Mua ngay</a> </div> </div>" +"</div>"  +   "</li>"
+                        renderProducts(DSSP[i][j].id,DSSP[i][j].thumb,DSSP[i][j].name,DSSP[i][j].price,DSSP[i][j].old_price)
                     );
                 }
                 break;
@@ -686,17 +673,10 @@
                 {
                     if(DSSP[i][j].code_brand==code_brand)
                     {
-                        $('.box .box-body .list-product').append(
-                            "<li class='col-p-4 col-t-3 col-m-2'>" +"<div class='item-product'>"+ "<a id_pro='" + DSSP[i][j].id + "'" + " href='detail_product.html' class='thumb'>" + "<img src='" + DSSP[i][j].thumb + "'" + "class='img-fluid'> </a>" + "<div class='infor-pro'>"
-                        + "<a href='' class='name'>" + DSSP[i][j].name + "</a>" +
-                        "<p class='price'>" + DSSP[i][j].price + "<del class='old-price ms-2'>" + DSSP[i][j].old_price + "</del> </p> </div>" +
-                        "<div class='buy d-flex justify-content-between flex-wrap'>" +
-                        "<div class='add-cart'> <a  id_pro='" + DSSP[i][j].id + "'" + " href='cart.html'>Thêm giỏ hàng</a></div>"
-                        + "<div class='buy-now'> <a id_pro='" + DSSP[i][j].id + "'" + " href='detail_product.html'>Mua ngay</a> </div> </div>" +"</div>"  +   "</li>"
-                    ); 
+                        renderProducts(DSSP[i][j].id,DSSP[i][j].thumb,DSSP[i][j].name,DSSP[i][j].price,DSSP[i][j].old_price);
+                    
                     }
                 }
-                // localStorage.setItem('code_brand',JSON.stringify(null));
 break;
             }
         } 
