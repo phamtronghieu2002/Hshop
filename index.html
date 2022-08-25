@@ -594,13 +594,15 @@
         );
     }
     for (var j = 0; j < 8; j++) {
-        dienThoai = dienThoai.sort(() => Math.random() - 0.5)
-        mayTinh = mayTinh.sort(() => Math.random() - 0.5)
+            
+        let i= Math.floor(Math.random() * 10);
+        console.log(dienThoai[i]+"id:"+dienThoai[i].id);
+     
         phone.append(
-            renderProducts(DSSP[0][j].id,DSSP[0][j].thumb,DSSP[0][j].name,DSSP[0][j].price,DSSP[0][j].old_price)
+            renderProducts(dienThoai[i].id,dienThoai[i].thumb,dienThoai[i].name,dienThoai[i].price,dienThoai[i].old_price)
         );
         laptop.append(
-            renderProducts(DSSP[2][j].id,DSSP[2][j].thumb,DSSP[2][j].name,DSSP[2][j].price,DSSP[2][j].old_price)
+            renderProducts(mayTinh[i].id,mayTinh[i].thumb,mayTinh[i].name,mayTinh[i].price,mayTinh[i].old_price)
         );
     }
 
