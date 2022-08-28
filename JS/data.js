@@ -591,6 +591,22 @@ var maytinhbang = [
     code_brand: "SS",
     id: 69,
   },
+  {
+    name: "Tablet SamSung Tab-68",
+    price: "22.000.000đ",
+    old_price: "37.000.000đ",
+    thumb: "Image/Tablet/Samsung/3.jpg",
+    code_brand: "SS",
+    id: 69,
+  },
+  {
+    name: "Tablet SamSung Tab-69",
+    price: "22.000.000đ",
+    old_price: "37.000.000đ",
+    thumb: "Image/Tablet/Samsung/1.jpg",
+    code_brand: "SS",
+    id: 69,
+  },
 ];
 var mayTinh = [
   {
@@ -1897,6 +1913,22 @@ var mayin = [
     thumb: "Image/printer/14.jpg",
     code_brand: "MI",
     id: 214,
+  },
+  {
+    name: "Printer-71",
+    price: "21.000.000đ",
+    old_price: "37.000.000đ",
+    thumb: "Image/printer/1.jpg",
+    code_brand: "MI",
+    id: 215,
+  },
+  {
+    name: "Printer-71",
+    price: "21.000.000đ",
+    old_price: "37.000.000đ",
+    thumb: "Image/printer/2.jpg",
+    code_brand: "MI",
+    id: 216,
   },
 ];
 dienThoai = dienThoai.sort(() => Math.random() - 0.5);

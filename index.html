@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="Plugin/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="Plugin/owlcarousel/assets/owl.theme.default.min.css">
     <script src="JS/JQUERY/Jquery.js"></script>
-    <script src="Bootstrap/js/popper.min.js"></script>
+    <script src="Bootstrap/js/popper.min.js"></script> 
     <script src="Bootstrap/js/bootstrap.min.js"></script>
     <script src="JS/data.js"></script>
     <script src="JS/index.js"></script>
@@ -478,7 +478,7 @@
                             ưu đãi
                             cực lớn cho khách hàng có thẻ thành viên.</p>
                         <a href="" style="cursor: none;">
-                            <img src="Image/payment.png" alt="">
+                            <img src="Image/payment.jpg" alt="">
                         </a>
                     </div>
                 </div>
@@ -587,17 +587,15 @@
         );
     }
     for (var j = 0; j < 16; j++) {
-        
-        var i = Math.floor(Math.random() * 5) + 0;
+        var i = Math.floor(Math.random() * 6) + 0;
+  
         hight_line.append(
             renderProducts(DSSP[i][j].id,DSSP[i][j].thumb,DSSP[i][j].name,DSSP[i][j].price,DSSP[i][j].old_price,true)
         );
     }
     for (var j = 0; j < 8; j++) {
             
-        let i= Math.floor(Math.random() * 10);
-        console.log(dienThoai[i]+"id:"+dienThoai[i].id);
-     
+        let i= Math.floor(Math.random() * 10); 
         phone.append(
             renderProducts(dienThoai[i].id,dienThoai[i].thumb,dienThoai[i].name,dienThoai[i].price,dienThoai[i].old_price)
         );

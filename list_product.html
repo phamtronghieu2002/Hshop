@@ -622,7 +622,7 @@
         var check_click=JSON.parse(localStorage.getItem('check_click'))
         var active_bread_crumb=document.getElementById('active_bread')
         var name_cat=document.getElementById('name_cat');
-
+console.log(id_cat);
         const handle_Name_Breadcrumb=(name)=>{
             active_bread_crumb.innerText=name
               name_cat.innerText=name
@@ -648,7 +648,7 @@
 
       
 
-      console.log(check_click==true);
+    
   if(check_click==true)
   {
         for (var i = 0; i < 6; i++) {
@@ -668,13 +668,14 @@
     {
         for (var i = 0; i < 6; i++) {
             if (i == id_cat) {
-               
+               console.log("có bằng nha m");
                 for(var j=0;j<DSSP[i].length;j++)
                 {
                     if(DSSP[i][j].code_brand==code_brand)
                     {
-                        renderProducts(DSSP[i][j].id,DSSP[i][j].thumb,DSSP[i][j].name,DSSP[i][j].price,DSSP[i][j].old_price);
-                    
+                        $('.box .box-body .list-product').append(
+                        renderProducts(DSSP[i][j].id,DSSP[i][j].thumb,DSSP[i][j].name,DSSP[i][j].price,DSSP[i][j].old_price)
+                    );
                     }
                 }
 break;
